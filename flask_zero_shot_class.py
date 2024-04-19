@@ -3,6 +3,7 @@ from transformers import pipeline
 
 app = Flask(__name__)
 
+# this is a flask app
 model = "MoritzLaurer/deberta-v3-large-zeroshot-v2.0"
 bart_pipeline = pipeline("zero-shot-classification", model=model)
 
